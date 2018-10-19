@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.15
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{3E2C4D8A-B782-4BE2-97C5-7D0427063054}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Server\Server.csproj", "{200FDC31-6D16-4BAA-858E-A0B18FC4394E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemotingLib", "RemotingLib\RemotingLib.csproj", "{D1C21975-13ED-43A8-B820-DD8CC81533B4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E2C4D8A-B782-4BE2-97C5-7D0427063054}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E2C4D8A-B782-4BE2-97C5-7D0427063054}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E2C4D8A-B782-4BE2-97C5-7D0427063054}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E2C4D8A-B782-4BE2-97C5-7D0427063054}.Release|Any CPU.Build.0 = Release|Any CPU
+		{200FDC31-6D16-4BAA-858E-A0B18FC4394E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{200FDC31-6D16-4BAA-858E-A0B18FC4394E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{200FDC31-6D16-4BAA-858E-A0B18FC4394E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{200FDC31-6D16-4BAA-858E-A0B18FC4394E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1C21975-13ED-43A8-B820-DD8CC81533B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1C21975-13ED-43A8-B820-DD8CC81533B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1C21975-13ED-43A8-B820-DD8CC81533B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1C21975-13ED-43A8-B820-DD8CC81533B4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B73D9A86-E2DB-4454-AA0D-CDDBC971C277}
+	EndGlobalSection
+EndGlobal

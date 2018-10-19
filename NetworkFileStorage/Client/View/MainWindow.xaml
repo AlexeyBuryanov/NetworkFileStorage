@@ -1,0 +1,51 @@
+﻿<Window 
+    x:Class="Client.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:Client"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    
+    Style="{StaticResource ResourceKey=StyleMainWindow}"
+    Title="Сетевое хранилище"
+    Icon="..\Icons\favicon.ico"
+    Height="500"
+    Width="960"
+    WindowStartupLocation="CenterScreen">
+
+    <Grid x:Name="GridWorkSpace">
+        <DataGrid 
+            x:Name="DataGridMain"
+            Margin="0"
+            BorderBrush="#FF3E3E3E"
+            RowBackground="WhiteSmoke" 
+            AlternatingRowBackground="White" 
+            CanUserReorderColumns="True" 
+            CanUserResizeColumns="True" 
+            CanUserResizeRows="True"
+            AutoGenerateColumns="False" 
+            GridLinesVisibility="Vertical" 
+            SelectionUnit="FullRow" 
+            SelectionMode="Single" 
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch"
+            ScrollViewer.VerticalScrollBarVisibility="Auto"
+            ScrollViewer.HorizontalScrollBarVisibility="Auto" 
+            CanUserAddRows="False" 
+            CanUserDeleteRows="False"
+            AllowDrop="True"
+            MouseDoubleClick="DataGridMain_MouseDoubleClick"
+            Drop="DataGridMain_Drop"
+            MouseDown="DataGridMain_MouseDown"
+            DragEnter="DataGridMain_DragEnter">
+            <DataGrid.Columns>
+                <!--<DataGridTextColumn Binding="{Binding FullName}" Header="Полный путь" Width="150" IsReadOnly="True"/>-->
+                <DataGridTextColumn Binding="{Binding Name}" Header="Имя" Width="120" IsReadOnly="True"/>
+                <DataGridTextColumn Binding="{Binding CreationTime, StringFormat=g, ConverterCulture=ru-RU}" Header="Дата создания" Width="120" IsReadOnly="True"/>
+                <DataGridTextColumn Binding="{Binding Extension}" Header="Тип" Width="120" IsReadOnly="True"/>
+                <DataGridTextColumn Binding="{Binding Length}" Header="Размер (мегабайт)" Width="120" IsReadOnly="True"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
