@@ -9,6 +9,7 @@ The storage is located on the server and is accessed using a WPF client. When fi
 - WPF vector graphics;
 - .NET Remoting;
 - MVVM;
+- Data Binding;
 - SQLite;
 - GZip;
 - Custom styles;
